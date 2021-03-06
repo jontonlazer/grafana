@@ -99,6 +99,10 @@ The editor context is available through the `context` prop. The data frames retu
 **SimpleEditor.tsx**
 
 ```ts
+import React from 'react';
+import { Select } from '@grafana/ui';
+import { StandardEditorProps } from '@grafana/data';
+
 export const SimpleEditor: React.FC<StandardEditorProps<string>> = ({ item, value, onChange, context }) => {
   const options: SelectableValue<string>[] = [];
 
